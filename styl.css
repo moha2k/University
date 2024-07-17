@@ -1,0 +1,508 @@
+body{
+    font-family: sans-serif;
+}
+.nav-top{
+    border-bottom: 1px solid black;
+    position: sticky;
+    top: 0;
+    z-index: 11;
+}
+
+@media (max-width:991px) {
+    .nav-top{
+        display: none;
+    }
+    
+}
+.nav-top .container{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.nav-top .container .nab{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+}
+.nav-top .container .nab h6{
+    font-size: 14px;
+    margin-right: 5px;
+}
+.nav-top .container .nab i{
+    background: rgb(0, 166, 255);
+    border-radius: 50%;
+    color: white;
+    padding: 10px 10px;
+    font-size: 12px;
+    
+}
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar-toggler{
+    display: none;
+}
+@media (max-width:991px) {
+    .navbar-toggler{
+        display: block;
+    }
+    
+}
+.navbar .container .list ul{
+    display: flex;
+   justify-content: space-between;
+   list-style: none;
+}
+.navbar .container .navbar-brand img{
+    width: 70%;
+}
+.dropbtn {
+    background-color: transparent;
+    color: rgb(38, 109, 156);
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    font-weight: bolder;
+    align-items: start;
+    /* cursor: pointer; */
+}
+.dropbtn:hover{
+    color: rgb(255, 191, 0); ;
+}
+@media (max-width:1000px) {
+    .dropbtn,.btn{
+        display: none;
+    }
+    .Academ{
+        display: none;
+    }
+}
+
+  
+.dropdown {
+    /* position: relative;
+    display: inline-block; */
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f7f7f7;
+    min-width: 244px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    min-height: 200px;
+    padding-top: 20px;
+}
+.dropdowm-content{
+    display: none;
+    position: absolute;
+    right: 40;
+    background-color: #f7f7f7;
+    min-width: 244px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    min-height: 50px;
+    padding-top: 20px;  
+}
+.Faculty{
+    width: 100%;
+}
+  
+.dropdown-content a{
+    color: black;
+    padding: 12px 30px;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+    font-size: 13px;
+
+}
+.dropdown-content a:hover{
+    color: rgb(0, 200, 255);
+}
+.dropdown-content a:hover {
+    background-color: #ddd;
+
+}
+.dropdowm-content a{
+    color: black;
+    padding: 12px 30px;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+    font-size: 13px;
+
+}
+.dropdowm-content a:hover{
+    color: rgb(25, 212, 249);
+}
+.dropdowm-content a:hover {
+    background-color: #ddd;
+    color: rgb(0, 200, 255);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+
+}
+.dropdown:hover .dropdowm-content {
+    display: block;
+
+}
+.active{
+    color: black;
+
+}
+.active:hover{
+    color: rgb(255, 187, 0);
+}
+.dropbtn::after{
+    content: '';
+    position: absolute;
+    width: 70%;
+    height: 0.120rem;
+    left: 10;
+    bottom: 10;
+    background: rgb(38, 109, 156);
+    transform: scale(0, 1);
+    transform-origin: 0% 100%;
+    transition: 0.2s ease;
+}
+.dropbtn:hover::after{
+    transform: scale(1, 1);
+}
+.navbar .container .Academ .Faculty .container{
+    display: flex;
+    justify-content: space-between;
+
+}
+.navbar .container .Academ button{
+    border: none;
+    background: transparent;
+    color: rgb(38, 109, 156);
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.navbar .container .Academ button:hover{
+    color: rgb(255, 191, 0);
+}
+.navbar .container .Academ button:hover{
+    border-bottom: 3px solid rgb(38, 109, 156);
+    transform-origin: 0% 100%;
+    transition: 0.2s ease;
+}
+.btn::after{
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 0.120rem;
+    left: 15;
+    bottom: 30;
+    background: rgb(38, 109, 156);
+    transform: scale(0, 1);
+    transform-origin: 0% 100%;
+    transition: 0.2s ease;
+}
+.btn:hover::after{
+    transform: scale(1, 1);
+
+}
+.navbar .container .Academ h4:hover{
+    border-bottom: 2px solid rgb(38, 109, 156);
+    transform-origin: 0% 100%;
+    transition: 0.2s ease;
+}
+.navbar .container .Academ h4{
+    font-weight: bold;
+    font-size: 18px;
+
+}
+
+
+
+.navbar .container .Academ .Faculty{
+    position: absolute;
+    top: 70px;
+    left: 0;
+    display: none;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: #f7f7f7;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+.navbar .container .Academ .Faculty .col{
+    flex-direction: column;
+    height: 100%;
+    line-height: 26px;
+
+}
+.navbar .container .Academ .Faculty .col h5{
+    font-weight: bold;
+}
+.navbar .container .Academ .Faculty .col a{
+    text-decoration: none;
+    color: black; 
+    font-size: 16px;
+    /* padding-bottom: 18px; */
+    padding-right: 10px;
+    
+
+}
+.navbar .container .Academ .Faculty .col a:hover{
+    background: rgb(231, 231, 231);
+    color: rgb(30, 221, 235);
+
+}
+.navbar .container .Academ:hover .Faculty{
+    display: block;
+}
+.section .cont .carousel img{
+    height: 100%;
+
+
+}
+.section .cont .carousel .carousel-inner .carousel-item div{
+    width: 100%;
+    height: 100%;
+    background: rgba(17, 2, 2, 0.218);
+    position: absolute;
+    top: 0;
+}
+.section1{
+    padding-top: 10px;
+
+}
+.section1 .container{
+    text-align: center;
+    background: rgb(238, 238, 238);
+    padding-top: 40px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.section1 .container .btn1{
+    background: rgb(245, 245, 245);
+    color: rgb(47, 46, 46);
+    width: 20%;
+    height: 10%;
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 30px;
+    
+}
+.section1 .container .btn2{
+    background: rgb(12, 133, 198);
+    color: rgb(251, 251, 252);
+    width: 20%;
+    height: 10%;
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 30px;
+    
+}
+.section1 .container .carousel .carousel-inner .carousel-item .rom {
+    display: flex;
+    justify-content: space-between;
+    background: #f8f8f8;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    
+
+}
+.section1 .container .carousel .carousel-inner .carousel-item .rom .col{
+    text-align: left;
+    margin-left: 10px;
+    margin-bottom:10px ;
+    
+}
+.section1 .container .carousel .carousel-inner .carousel-item .rom .col .card{
+    width: 15rem;
+}
+.section1 .container .carousel .carousel-inner .carousel-item .rom .col img{
+    height: 190px;
+
+
+}
+.section1 .container .carousel .carousel-inner .carousel-item .rom .col .card-body{
+    background: rgb(224, 224, 224);
+    
+}
+.section1 .container .carousel .carousel-inner .carousel-item .rom .col .card-body a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.section1 .container .carousel .carousel-inner .carousel-item .rom .col .card-body .card-title:hover{
+    color: rgb(49, 133, 207);
+}
+
+
+
+@media (max-width:1030px) {
+    .section1 .container .carousel div{
+        /* margin-right: 10px; */
+    }
+    .section1 .container .carousel div .btn1,.section1 .container .carousel div .btn2{
+        width: 100%;
+    }
+    .section1 .container .carousel .carousel-inner .carousel-item .rom .col .card{
+        width: 90px;
+        margin-bottom: 30px;
+        margin-right: 10px;
+    }
+
+
+    
+}
+.section1 .container .carousel .carousel-inner .carousel-item .rom .col .card div{
+    position: relative;
+}
+.section1 .container .carousel .carousel-inner .carousel-item .rom .col .card div .over{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.38);
+    color: white;
+    font-size: 30px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 70px;
+    display: none;
+    transition: 0.7s;
+}
+.section1 .container .carousel .carousel-inner .carousel-item .rom .col .card div:hover .over{
+    display: block;
+    
+}
+.section1 .container .carousel .carousel-inner .carousel-item .rom .col .card div .over span{
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.icn{
+    
+    
+}
+.icm{
+    background: transparent;
+}
+.icn i{
+    position: absolute;
+    top: 220;
+    right:-18px;
+    background: rgb(255 255 255);
+    font-size: 24px;
+    color: rgb(1, 162, 231);
+    padding: 20px 20px;
+    border-radius: 50%;
+    z-index: 0;
+
+}
+.icm i{
+    position: absolute;
+    top: 220;
+    left: -17px;
+    background: rgb(255 255 255);
+    font-size: 24px;
+    color: rgb(1, 162, 231);
+    padding: 20px 20px;
+    border-radius: 50%;
+    z-index: 0;
+}
+.carousel-control-next-icon{
+    background: transparent;
+}
+.carousel-control-prev-icon{
+    background: transparent;
+}
+.section2{
+
+    
+}
+.section2 .container{
+    background: rgb(238, 238, 238);
+    padding-top:40px;
+    padding-bottom: 40px;
+}
+.section2 .container .col h2{
+    font-weight: bolder;
+}
+.section2 .container .col button{
+    background: rgb(56, 172, 218);
+    color: white;
+    border: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-weight: bold;
+}
+.section2 .container .col .box div{
+    display: flex;
+    gap: 10px;
+    position: relative;
+    right: 20;
+}
+.section2 .container .col .box div i{
+    color: white;
+    padding: 5px 10px;
+    border-radius: 50%;
+    background:rgb(56, 196, 218) ;
+
+}
+.section2 .container .col .box div h5{
+    font-weight: bold;
+}
+.section2 .container .col .ben .bil h6{
+    color: red;
+}
+.section2 .container .col .box{
+    padding-left: 20px;
+}
+.section2 .container .col .box p{
+    padding-left: 24px;
+}
+.section2 .container .col .ben .bil{
+    background: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+
+    margin-right:10px ;
+}
+.section2 .container .col .ben{
+    background: rgb(221, 221, 221);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    /* padding-right: 10px; */
+    position: relative;
+    top: 60px;
+    
+}
+.section2 .container .col .ben .bil img{
+    border-radius: 50%;
+    padding-bottom: 10px;
+}
+@media (max-width:991px) {
+    .section2 .container .row .col{
+        flex-basis: 100%;
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+        
+    
+    }
+    
+}
